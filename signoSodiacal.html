@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu signo zodiacal</title>
     <script src="zodiac.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="form-container">
       <form id="form">
         <div class="form-group">
-          <label for="birthday">Fecha de Nacimiento:</label>
-          <input type="date" id="birthday" name="birthday" required>
+          <label for="birthdate">Fecha de Nacimiento:</label>
+          <input type="date" id="birthdate" name="birthdate" required>
+          <input type="submit" value="Submit">
         </div>
-        <button type="submit">Enviar</button>
       </form>
-      <div class="result">
+      <div id="result" class="result">
         <p id="sign"></p>
       </div>
     </div>

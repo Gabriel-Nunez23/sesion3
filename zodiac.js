@@ -1,16 +1,14 @@
-function zodiac() {
-    let day, month, year;
-    day = parseInt (document.formulario.day.value);
-    month = parseInt (document.formulario.month.value);
-    year = parseInt (document.formulario.year.value);
+const form = document.querySelector('form');
+const result = document.querySelector('#result');
 
-    var image = document.getElementById("imagenes");
-    
-}
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
+    const birthdate = new Date(document.querySelector('#birthdate').value);
+    const month = birthdate.getMonth();
+    const day = birthdate.getDate();
 
-function determineSign(day, month) {
-  let sign = '';
+    let sign = '';
 
   switch (month) {
     case 1:
@@ -50,11 +48,6 @@ function determineSign(day, month) {
       sign = (day <= 21) ? 'Sagitario' : 'Capricornio';
       break;
   }
-
   return sign;
-}
 
-const day = 5;
-const month = 3;
-const sign = determineSign(day, month);
-console.log(`Su signo zodiacal es: ${sign}`);
+})
