@@ -1,53 +1,50 @@
-const form = document.querySelector('form');
-const result = document.querySelector('#result');
-
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const birthdate = new Date(document.querySelector('#birthdate').value);
-    const month = birthdate.getMonth();
-    const day = birthdate.getDate();
-
-    let sign = '';
+function calculateZodiacSign() {
+  var birthday = new Date(document.querySelector("#birthday").value);
+  var month = birthday.getMonth();
+  var day = birthday.getDate();
+  var zodiacSign;
 
   switch (month) {
+    case 0:
+      zodiacSign = (day <= 19) ? "Capricorn" : "Aquarius";
+      break;
     case 1:
-      sign = (day <= 19) ? 'Capricornio' : 'Acuario';
+      zodiacSign = (day <= 18) ? "Aquarius" : "Pisces";
       break;
     case 2:
-      sign = (day <= 18) ? 'Acuario' : 'Piscis';
+      zodiacSign = (day <= 20) ? "Pisces" : "Aries";
       break;
     case 3:
-      sign = (day <= 20) ? 'Piscis' : 'Aries';
+      zodiacSign = (day <= 19) ? "Aries" : "Taurus";
       break;
     case 4:
-      sign = (day <= 19) ? 'Aries' : 'Tauro';
+      zodiacSign = (day <= 20) ? "Taurus" : "Gemini";
       break;
     case 5:
-      sign = (day <= 20) ? 'Tauro' : 'Géminis';
+      zodiacSign = (day <= 20) ? "Gemini" : "Cancer";
       break;
     case 6:
-      sign = (day <= 20) ? 'Géminis' : 'Cáncer';
+      zodiacSign = (day <= 22) ? "Cancer" : "Leo";
       break;
     case 7:
-      sign = (day <= 22) ? 'Cáncer' : 'Leo';
+      zodiacSign = (day <= 22) ? "Leo" : "Virgo";
       break;
     case 8:
-      sign = (day <= 22) ? 'Leo' : 'Virgo';
+      zodiacSign = (day <= 22) ? "Virgo" : "Libra";
       break;
     case 9:
-      sign = (day <= 22) ? 'Virgo' : 'Libra';
+      zodiacSign = (day <= 22) ? "Libra" : "Scorpio";
       break;
     case 10:
-      sign = (day <= 22) ? 'Libra' : 'Escorpio';
+      zodiacSign = (day <= 21) ? "Scorpio" : "Sagittarius";
       break;
-    case 11:
-      sign = (day <= 21) ? 'Escorpio' : 'Sagitario';
+    case 11
+      zodiacSign = (day <= 21) ? 'Escorpio' : 'Sagitario';
       break;
     case 12:
-      sign = (day <= 21) ? 'Sagitario' : 'Capricornio';
+      zodiacSign = (day <= 21) ? 'Sagitario' : 'Capricornio';
       break;
   }
-  return sign;
+  return zodiacSign;
 
 })
