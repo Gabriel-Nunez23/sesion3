@@ -9,19 +9,18 @@
 </head>
 <body>
 
-    <form name="formulario">
-    <fieldset>
-    <legend>Datos</legend>
-    <label >Ingresa tu día de nacimiento</label>
-    <input type="number" name="day" max="31" min="1" step="" required>
-    <label >Ingresa tu mes de nacimiento</label>
-    <input type="number" name="month" max="12" min="1" step="" required>
-    <label >Ingresa tu año de nacimiento</label>
-    <input type="number" name="year" max="2023" min="1s" step="" required>
-    <input value="Enviar" type="button" onclick="zodiac();">
-    <input type="reset" />
-    </fieldset>
-    </form>
+    <div class="form-container">
+      <form id="form">
+        <div class="form-group">
+          <label for="birthday">Fecha de Nacimiento:</label>
+          <input type="date" id="birthday" name="birthday" required>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="result">
+        <p id="sign"></p>
+      </div>
+    </div>
 
 </body>
 </html>
