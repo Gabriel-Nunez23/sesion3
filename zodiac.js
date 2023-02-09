@@ -2,8 +2,8 @@ document.getElementById("submit").addEventListener("click", function() {
     var birthday = new Date(document.querySelector("#birthday").value);
     var month = birthday.getMonth() + 1;
     var day = birthday.getDate();
-    var zodiacSign;
-    var imageSrc;
+    var zodiacSign = "No a seleccionado una fecha valida";
+    var imageSrc = "";
     
     switch (month) {
         
