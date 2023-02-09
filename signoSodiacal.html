@@ -1,27 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu signo zodiacal</title>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Zodiac Sign Calculator</title>
+  </head>
+  <body>
+    <h1>Zodiac Sign Calculator</h1>
+    <form>
+      <label for="birthday">Enter your birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+      <button type="button" onclick="calculateZodiacSign()">Submit</button>
+    </form>
+    <p id="result"></p>
     <script src="zodiac.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div class="form-container">
-      <form id="form">
-        <div class="form-group">
-          <label for="birthdate">Fecha de Nacimiento:</label>
-          <input type="date" id="birthdate" name="birthdate" required>
-          <input type="submit" value="Submit">
-        </div>
-      </form>
-      <div id="result" class="result">
-        <p id="sign"></p>
-      </div>
-    </div>
-
-</body>
+  </body>
 </html>
