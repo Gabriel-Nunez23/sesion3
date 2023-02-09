@@ -2,16 +2,20 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Zodiac Sign Calculator</title>
+    <title>Tu signo zodiacal</title>
   </head>
   <body>
-    <h1>Zodiac Sign Calculator</h1>
+    <h1>¿Cuál es tu signo zodiacal?</h1>
+    <div>
+    <img src="http://sweetclipart.com/multisite/sweetclipart/files/astrology_set_clipart_color_2.png" width=32%></div>
     <form>
-      <label for="birthday">Enter your birthday:</label>
-      <input type="date" id="birthday" name="birthday">
-      <button type="button" onclick="calculateZodiacSign()">Submit</button>
+      <label for="birthday">Ingresa tu fecha de cumpleaños:</label>
+      <input type="date" id="birthday" name="birthday" required>
+      <button type="button" onclick="calculateZodiacSign()">¡Averigua tu signo!</button>
     </form>
     <p id="result"></p>
+    <p id="photo"></p>
+
     <script src="zodiac.js"></script>
   </body>
 </html>
