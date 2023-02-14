@@ -1,10 +1,11 @@
+html {
+  height: 100%;
+}
 body {
-
-    background-repeat: no-repeat;
-    background-size: 36%;
     background-position: right 600px top 370px;
         color: #1C5188;
     background:linear-gradient(to bottom,rgb(0, 255, 106), #FEF0EF 60%);
+    height: 100%;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     text-align: center;
@@ -17,17 +18,40 @@ h1 {
 form {
   margin-top: 50px;
   display: inline-block;
-  text-align: left;
+  text-align: center;
   padding: 50px;
 }
 
 label {
   font-weight: bold;
   margin-right: 10px;
+  font-size: 30px;
+  text-align: center;
 }
 
 #result {
   margin-top: 50px;
   font-weight: bold;
   font-size: 20px;
+}
+
+img {
+    width: 18%
+}
+
+input {
+    width: 20%;
+    height: 5%;
+    text-align: center;
+}
+
+.button {
+    margin-top: 30px;
+    background: linear-gradient(45deg, rgba(0, 153, 255, 0.65) 0%,rgba(0, 247, 255, 0.65) 50%,rgba(0, 255, 162, 0.65) 100%);
+    width: 38%;
+    height: 35px;
+    font-size: 20px;
+    padding: 6px 22px;
+    text-decoration: none;
+    border-radius: 7px;
 }

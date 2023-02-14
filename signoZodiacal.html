@@ -7,15 +7,19 @@
   <body>
     <h1>¿Cuál es tu signo zodiacal?</h1>
     <div>
-    <img src="http://sweetclipart.com/multisite/sweetclipart/files/astrology_set_clipart_color_2.png" width=32%></div>
+    <img src="http://sweetclipart.com/multisite/sweetclipart/files/astrology_set_clipart_color_2.png"></div>
     <form>
-      <label for="birthday">Ingresa tu fecha de cumpleaños:</label>
+      <div>
+      <label for="birthday">Ingresa tu fecha de cumpleaños</label>
       <input type="date" id="birthday" name="birthday" required>
-      <button type="button" id="submit">¡Averigua tu signo!</button>
+      <input class="button" type="button" id="submit" value="¡Averigua tu signo!">
+      
+    </div>
     </form>
-    <p id="result"></p>
-    <p id="photo" src="" alt=""></p>
+    
 
-    <script src="zodiac.js"></script>
+    <script src="js/zodiac.js"></script>
+    <script src="js/sweetAlert.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
