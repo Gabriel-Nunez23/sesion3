@@ -70,6 +70,7 @@ document.getElementById("submit").addEventListener("click", function() {
         timer: 2000,
         timerProgressBar: true,
         allowOutsideClick: true,
+        showConfirmButton: false,
     })
     
 });
