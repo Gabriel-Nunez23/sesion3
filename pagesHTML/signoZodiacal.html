@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<!-- Llamado a la hoja de estilos de la pagina -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Tu signo zodiacal</title>
   </head>
+<!-- Inicio del contenido de la pagina -->
   <body class="background">
+<!-- Titulo de la pagina --> 
     <h1>¿Cuál es tu signo zodiacal?</h1>
+<!-- Imagen representativa del contenido de la pagina -->
     <div>
     <img src="http://sweetclipart.com/multisite/sweetclipart/files/astrology_set_clipart_color_2.png"></div>
     <form>
       <div>
       <label for="birthday">Ingresa tu fecha de cumpleaños</label>
-      <input type="date" id="birthday" name="birthday" required>
+      <input type="date" id="birthday" name="birthday" placeholder="Selecciona la fecha" required>
       <input class="button" type="button" id="submit" value="¡Averigua tu signo!">
       
     </div>
     </form>
     
-
+<!-- Llamado de los js -->
     <script src="js/zodiac.js"></script>
-    <script src="js/sweetAlert.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

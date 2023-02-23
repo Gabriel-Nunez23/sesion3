@@ -1,10 +1,14 @@
+/* Inicio de la función y declarar variables */
+
 document.getElementById("submit").addEventListener("click", function() {
     var birthday = new Date(document.querySelector("#birthday").value);
     var month = birthday.getMonth() + 1;
     var day = birthday.getDate();
     var zodiacSign = "No a seleccionado una fecha valida";
     var imageSrc = "";
-    
+
+/* Se evalua el valor obtenido en dia y mes y hace una coincidencia con el respectivo signo y se le asigna una imagen */
+
     switch (month) {
         
         case 1:
@@ -57,6 +61,8 @@ document.getElementById("submit").addEventListener("click", function() {
         break;
     }
 
+/* Alerta utilizando la libreria de Sweet Alert*/
+
     Swal.fire({
         title: 'Tu signo zodiacal es',
         text: `${zodiacSign}`,
@@ -73,5 +79,4 @@ document.getElementById("submit").addEventListener("click", function() {
         showConfirmButton: false,
     })
     
-});
-  
+});  
