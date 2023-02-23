@@ -7,7 +7,7 @@ document.getElementById("submit").addEventListener("click", function() {
     var zodiacSign = "No a seleccionado una fecha valida";
     var imageSrc = "";
 
-/* Se evalua el valor obtenido en dia y mes y hace una coincidencia con el respectivo signo y se le asigna una imagen */
+/* Se evalua el valor obtenido en dia y mes y se lo asigna a su respectivo signo añadiendole la imagen del signo */
 
     switch (month) {
         
